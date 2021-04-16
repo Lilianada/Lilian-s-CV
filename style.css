@@ -4,7 +4,8 @@
     box-sizing: border-box;
   }
   html {
-    height: 100%;  
+    height: 100%; 
+    width: 100%; 
   }
   
   body {
@@ -12,7 +13,7 @@
     background: #eee;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
-    color: #222;
+    color: #132743;
     font-size: 14px;
     line-height: 26px;
     padding-bottom: 50px;
@@ -20,14 +21,13 @@
   
   .container {
     max-width: 700px;   
-    background: #C0B7B1;
+    background: #FFC7BD;
     margin: 0px auto 0px; 
     box-shadow: 1px 1px 2px #DAD7D7;
     border-radius: 5px;  
     padding: 40px;
     margin-top: 50px;
   }
-  
   .header {
     margin-bottom: 30px;
   }  
@@ -36,6 +36,10 @@
       font-size: 40px;
       text-transform: uppercase;
       margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      background-color: #7FB3BB;
+      border: 15px 50px solid #7FB3BB;
     }
     
     .first-name {
@@ -49,6 +53,8 @@
     .contact-info {
       margin-bottom: 20px;
       margin-top: 15px;
+      display: flex;
+      justify-content: center;
     }
     
     .email ,
@@ -58,9 +64,9 @@
     } 
     
     .separator {
-      height: 10px;
-      display: inline-block;
-      border-left: 2px solid #999;
+      height: 25px;
+      display: inline-flex;
+      border-left: 2px solid #629097;
       margin: 0px 10px;
     }
     
@@ -85,9 +91,11 @@
     
     .section__title {
       letter-spacing: 2px;
-      color: #8E6E53;
+      color: #79adb5;
+      font-size: 18px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-top: 2em;
+      margin-bottom: 1em;
       text-transform: uppercase;
     }
     
@@ -130,7 +138,7 @@
     }
       
     .skills__item {
-      margin-bottom: 5px;  
+      margin-top: 3px;  
     }
     
     .skills__item .right input {
@@ -141,13 +149,14 @@
         display: inline-block;  
         width: 20px;
         height: 20px;
-        background: #eee;
+        background: #79adb5;
         border-radius: 20px;
         margin-right: 3px;
+        margin-top: 3px;
       }
       
       input:checked + label {
-        background: #8E6E53;
+        background: #132743;
       }
 
       @media screen and (max-width:768px){
@@ -158,11 +167,22 @@
         .full-name{
             font-size: 25px;
         }        
-        label {
-            width: 15px;
-            height: 15px;
+        .contact-info {
+          margin-bottom: 20px;
+          margin-top: 13px;
+          display: block;
+          justify-content: center;
         }
-
+        .section__title{
+          font-size: 14px;
+        }
+        label {
+            width: 10px;
+            height: 10px;
+        }
+        .separator {
+          height: 10px;
+        }
       }
   
   
