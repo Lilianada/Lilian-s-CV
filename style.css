@@ -159,6 +159,12 @@
         background: #132743;
       }
 
+    .social-links{
+        color: #132743;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
       @media screen and (max-width:768px){
         body{ 
             font-size: 12px;
